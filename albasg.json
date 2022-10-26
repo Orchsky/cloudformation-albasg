@@ -6,7 +6,6 @@
             "Description": "This key will be used to SSH into EC2 instances",
             "Type": "AWS::EC2::KeyPair::KeyName"
         }
-        
     },
     "Resources": {
         "VPC": {
