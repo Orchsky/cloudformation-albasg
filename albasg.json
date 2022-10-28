@@ -656,21 +656,9 @@
                 "LaunchConfigurationName" : {"Ref": "LaunchCongiguration"},
                 "MaxSize" : "5",
                 "MinSize" : "2",
-                "Tags" : [ {
-                    "PropgateAtLaunch": true,
-                    "Key": "Name",
-                    "Value": "ASG-wordpress"
-                }],
-                "TargetGroupARNs" : [ {
-                    "Ref": "TargetGroup"
-                } ],
-                "VPCZoneIdentifier" : [ {
-                    "Ref": "Private1"
-                },
-                {
-                    "Ref": "Private2"
-                }
-            ]
+                "Tags" : [{"PropagateAtLaunch": true, "Key": "Name","Value": "ASG-wordpress"}],
+                "TargetGroupARNs" : [{"Ref": "TargetGroup" }],
+                "VPCZoneIdentifier" : [ {"Ref": "Private1"},{"Ref": "Private2"}]
                 }
             },
             "BastionInstance": {

@@ -40,4 +40,4 @@ jobs:
     #   run:  aws cloudformation delete-stack --stack-name vpc-stack
 
     - name: Deploy CFT to aws in us-east-2
-      run: aws cloudformation deploy --template-file albasg.json --stack-name wordpress --parameter-overrides WebServerKey=openvpn
+      run: aws cloudformation deploy --template-file albasg.json --stack-name wordpress1 --parameter-overrides WebServerKey=openvpn
