@@ -211,8 +211,8 @@
             "Type" : "AWS::EC2::Route",
             "DependsOn": "InternetGatewayAttachment",
             "Properties" : {
-                "GatewayId" : {"Ref": "DMZ2NatGW"},
-                "NatGatewayId" : {"Ref": "PrivateRT"},
+                "NatGatewayId" : {"Ref": "DMZ2NatGW"},
+                "RouteTableId" : {"Ref": "PrivateRT"},
                 "DestinationCidrBlock" : "0.0.0.0/0" 
             }
         },
